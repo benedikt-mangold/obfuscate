@@ -3,19 +3,37 @@ obfuscator
 ==========
 
 
-Add a short description here!
+# README #
+# Obfuscate
+Package for
+obfuscating text with sensitive information while
+maintaining relevant information such as
+- Order of tokens
+- Identical mapping of identical tokens
+
+Any human readible information is thus purged from the text. However,
+token-based machine learning algorithm are stil able to pickup
+the information provided by the tokens, see the jupyter-notebook example
+provided in the `example` directory
+
+# Text manipulations
+The text is reformatted as follows:
+
+- signs are left as is
+- latin-alpha numeric tokens are exchanged by random latin-alpha
+numeric tokens, while maintaining
+the amount of alpha- and numeric- characters
+- chinese characters are split into character groups using `jieba` and
+each group is replaced by a random chinese character group
+- the remaining tokens are transformed into a random latin-alpha numeric
+string of length `N`
+
+The mapping is stored internally and can be reverted.
 
 
-Description
-===========
+TODO:
+- reversible operation
 
-A longer description of your project goes here...
+### Who do I talk to? ###
 
-
-.. _pyscaffold-notes:
-
-Note
-====
-
-This project has been set up using PyScaffold 4.0.1. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+* benedikt.mangold@mailbox.org
