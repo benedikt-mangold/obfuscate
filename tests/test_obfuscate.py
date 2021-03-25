@@ -250,7 +250,7 @@ class TestPickling(unittest.TestCase):
         test_string = "qa_1234_qa is the keycode"
         _ = of.obfuscate(test_string)
 
-        target_path_2 = os.path.join(os.path.dirname(__file__), '../test_data/test_pickle_file.pkl')
+        target_path_2 = os.path.join(os.path.dirname(__file__), 'test_data/test_pickle_file.pkl')
         file_name = os.path.normpath(target_path_2)
 
         with open(file_name, "wb") as f:
