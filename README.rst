@@ -2,9 +2,6 @@
 obfuscator
 ==========
 
-
-# README #
-# Obfuscate
 Package for
 obfuscating text with sensitive information while
 maintaining relevant information such as
