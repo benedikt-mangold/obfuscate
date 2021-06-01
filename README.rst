@@ -13,7 +13,9 @@ token-based machine learning algorithm are stil able to pickup
 the information provided by the tokens, see the jupyter-notebook example
 provided in the `example` directory
 
-# Text manipulations
+Text manipulations
+------------------
+
 The text is reformatted as follows:
 
 - signs are left as is
@@ -31,6 +33,7 @@ The mapping is stored internally and can be reverted.
 TODO:
 - reversible operation
 
-### Who do I talk to? ###
+Who do I talk to?
+-----------------
 
 * benedikt.mangold@mailbox.org
