@@ -31,9 +31,5 @@ The mapping is stored internally and can be reverted.
 
 
 TODO:
-- reversible operation
 
-Who do I talk to?
------------------
-
-* benedikt.mangold@mailbox.org
+- reversible operations
